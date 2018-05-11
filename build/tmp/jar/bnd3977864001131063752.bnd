@@ -1,0 +1,7 @@
+#Fri May 11 17:59:13 EDT 2018
+Bundle-Vendor=dotCMS
+Bundle-Activator=com.dotcms.plugin.rest.Activator
+Bundle-Description=dotCMS - Rest Endpoint example
+Import-Package=*;version\=0
+Bundle-DocURL=https\://dotcms.com/
+DynamicImport-Package=*
