@@ -69,10 +69,7 @@ public class NavResource  {
             
             Map<String, Object> navMap = (nav!=null) ? navToMap(nav, depth, 1) : new HashMap<>();
 
-            ObjectMapper mapper = new ObjectMapper();
-            String json = mapper.writeValueAsString(navMap);
-
-            final Response.ResponseBuilder responseBuilder = Response.ok(json);
+            final Response.ResponseBuilder responseBuilder = Response.ok(navMap);
 
             responseBuilder.header("Access-Control-Expose-Headers", "Authorization");
             responseBuilder.header("Access-Control-Allow-Headers",
